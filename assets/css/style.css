@@ -183,9 +183,6 @@ main {
 
 .aboutme-heading {
     grid-area: heading;
-    font-size: 3rem;
-    font-weight: 500;
-    text-align: center;
 }
 
 .about-desc {
@@ -207,9 +204,55 @@ main {
     border-radius: 8px;
 }
 
-.skills {
-    height: 800px;
+/*------------------------------ Skills Section -------------------- ------------------------*/
+.heading {
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
 }
+
+.skills {
+    /* height: 800px; */
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: #e518b8;
+}
+
+.skills-desc {
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* background-color: #7659d0; */
+}
+
+.single-skill {
+    background-color: #f2f4f5;
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    display: grid;
+    justify-content: space-around;
+}
+
+.second_icon {
+    display: none;
+}
+
+.single-skill h1 {
+    font-size: 1.5rem;
+}
+
+.single-skill h1 i {
+    color: #5661C7;
+    padding: 0 20px;
+}
+
 
 @media screen and (max-width: 1024px) {
     nav ul {
