@@ -93,13 +93,14 @@ nav ul li a:hover {
 main {
     width: 100%;
     font-size: 20px;
-    padding-top: 80px;
+    padding: 80px 0 0 0;
+    margin: 0;
 }
 
 .container {
     width: 100%;
     display: grid;
-    padding: 80px 10%;
+    padding: 80px 10% 0 0;
 }
 
 .container-one {
@@ -112,7 +113,9 @@ main {
 
 /** ---------------------- Home section --------------------------- */
 #home {
-    /* grid-template: 1fr 1fr / 2fr 1fr; */
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 100px;
+    grid-template-areas: "home-desc profile-img" "social__links profile-img";
     gap: 10px;
 }
 
@@ -124,6 +127,7 @@ main {
     padding: 20px 80px;
     display: grid;
     align-content: space-around;
+    grid-area: home-desc;
 }
 
 .home-desc h1 {
@@ -140,6 +144,8 @@ main {
 
 .profile-img {
     margin: 0 auto;
+    grid-area: profile-img;
+    height: 400px;
 }
 
 .profile-img>img {
@@ -148,10 +154,10 @@ main {
 }
 
 .social__links {
+    grid-area: social__links;
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-column: span 2;
     height: 60px;
     text-align: center;
 }
@@ -168,20 +174,22 @@ main {
 
 /* ------------------------- About me section -------------------------- */
 #aboutme {
-    grid-template: 10% 1fr 10%/ 1fr 30%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10% 1fr;
+    grid-template-areas: "heading heading " "profile-img about-desc";
     gap: 10px;
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
 }
 
-.heading {
-    grid-column: span 2;
+.aboutme-heading {
+    grid-area: heading;
     font-size: 3rem;
     font-weight: 500;
     text-align: center;
-    padding-bottom: 20px;
 }
 
 .about-desc {
+    grid-area: about-desc;
     padding: 10px 80px;
 }
 
@@ -203,7 +211,7 @@ main {
     height: 800px;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
     nav ul {
         display: none;
     }
@@ -251,6 +259,23 @@ main {
     nav ul li a {
         font-size: 16px;
     }
+
+    #home {
+        gap: 10px;
+        padding-left: 0;
+    }
 }
 
-@media screen and (max-width: 428px) {}
+@media screen and (max-width: 768px) {
+    #home {
+        grid-template: 1fr / 1fr;
+        grid-template-areas: "home-desc" "profile-img" "social__links";
+        gap: 10px;
+    }
+
+    #aboutme {
+        grid-template: 1fr / 1fr;
+        /* grid-template-rows: 10% 1fr; */
+        grid-template-areas: "heading" "profile-img " "about-desc";
+    }
+}
