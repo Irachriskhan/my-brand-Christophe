@@ -1,0 +1,237 @@
+:root {
+    --bg-glow: rgb(205, 209, 216);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden scroll;
+}
+
+/*-------------- START OF NAVIGATION BAR ------------------------*/
+
+nav {
+    background-color: #fff;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+
+label.logo {
+    color: #27187E;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+    /* margin: 0 auto; */
+}
+
+nav ul {
+    margin-right: 20px;
+    /* position: absolute;
+    right: 0;
+    top: 0; */
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    font-size: 17px;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    background-color: rgb(87, 164, 10);
+    transition: .7s ease-in-out;
+}
+
+.active {
+    color: #0E41A3;
+    text-decoration: underline;
+}
+
+.checkBtn {
+    position: absolute;
+    font-size: 30px;
+    float: right;
+    right: 0;
+    line-height: 80px;
+    color: #000;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+#check,
+.checkBtn {
+    display: none;
+}
+
+.login {
+    color: #F26419;
+    font-size: 19px;
+}
+
+/*-------------- END OF NAVIGATION BAR ------------------------*/
+
+/*-------------- START OF MAIN SECTION ------------------------*/
+main {
+    width: 100%;
+    font-size: 20px;
+    padding: 80px 0 0 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    display: grid;
+    padding: 80px 10%;
+}
+
+.container-one {
+    background-image: linear-gradient(to bottom, rgb(67, 35, 113), rgb(250, 174, 123), #fff 20%);
+}
+
+.container-two {
+    background-image: linear-gradient(to top, rgb(67, 35, 113), rgb(250, 174, 123), #fff 20%);
+}
+
+/** ---------------------- Home section --------------------------- */
+#home {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "home-desc profile-img" "social__links profile-img";
+    gap: 10px;
+}
+
+/* #home div {
+    background-color: #916b6b;
+} */
+
+.home-desc {
+    padding: 20px 80px;
+    display: grid;
+    align-content: space-around;
+    grid-area: home-desc;
+}
+
+.home-desc h1 {
+    font-size: 3rem;
+}
+
+.home-desc label {
+    color: #A63636;
+}
+
+.home-desc p {
+    font-size: 2rem;
+}
+
+.profile-img {
+    margin: 0 auto;
+    grid-area: profile-img;
+}
+
+.profile-img>img {
+    max-width: 300px;
+    border-radius: 50%;
+}
+
+.social__links {
+    grid-area: social__links;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    text-align: center;
+}
+
+.social__links li {
+    color: rgb(104, 109, 212);
+    padding: 0 10px;
+    font-size: 2rem;
+}
+
+.social__links li:hover {
+    color: #e518b8;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    nav ul {
+        display: none;
+    }
+
+    nav ul li {
+        line-height: 40px;
+    }
+
+    .checkBtn {
+        display: block;
+    }
+
+    #check:checked~ul {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 80px;
+        right: 0;
+        width: 130px;
+        text-align: left;
+        background-color: rgb(214, 203, 181);
+        border-radius: 0 0 0 12px;
+    }
+
+    .bar-off {
+        display: none;
+    }
+
+    #check:checked~.checkBtn>.bar-off {
+        display: block;
+        line-height: 80px;
+        font-size: 35px;
+    }
+
+    #check:checked~.checkBtn>.bar-on {
+        display: none;
+    }
+
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul,
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    #home {
+        gap: 10px;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #home {
+        grid-template: 1fr / 1fr;
+        grid-template-areas: "home-desc" "profile-img" "social__links";
+        gap: 10px;
+    }
+}
