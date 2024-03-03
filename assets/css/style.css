@@ -93,7 +93,8 @@ nav ul li a:hover {
 main {
     width: 100%;
     font-size: 20px;
-    padding-top: 80px;
+    padding: 80px 0 0 0;
+    margin: 0;
 }
 
 .container {
@@ -112,7 +113,9 @@ main {
 
 /** ---------------------- Home section --------------------------- */
 #home {
-    /* grid-template: 1fr 1fr / 2fr 1fr; */
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "home-desc profile-img" "social__links profile-img";
     gap: 10px;
 }
 
@@ -124,6 +127,7 @@ main {
     padding: 20px 80px;
     display: grid;
     align-content: space-around;
+    grid-area: home-desc;
 }
 
 .home-desc h1 {
@@ -140,6 +144,7 @@ main {
 
 .profile-img {
     margin: 0 auto;
+    grid-area: profile-img;
 }
 
 .profile-img>img {
@@ -148,10 +153,10 @@ main {
 }
 
 .social__links {
+    grid-area: social__links;
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-column: span 2;
     height: 60px;
     text-align: center;
 }
@@ -199,7 +204,7 @@ main {
     border-radius: 8px;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
     nav ul {
         display: none;
     }
@@ -247,6 +252,17 @@ main {
     nav ul li a {
         font-size: 16px;
     }
+
+    #home {
+        gap: 10px;
+        padding-left: 0;
+    }
 }
 
-@media screen and (max-width: 428px) {}
+@media screen and (max-width: 768px) {
+    #home {
+        grid-template: 1fr / 1fr;
+        grid-template-areas: "home-desc" "profile-img" "social__links";
+        gap: 10px;
+    }
+}
