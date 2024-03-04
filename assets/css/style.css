@@ -97,6 +97,7 @@ main {
     margin: 0;
 }
 
+
 .container {
     width: 100%;
     display: grid;
@@ -344,6 +345,77 @@ main {
 }
 
 /* ------------------------------------------------ END OF SERVICES SECTION -----------------------------------------  */
+/* ------------------------------------------------ LOGIN and REGISTER SECTION -----------------------------------------  */
+.login-section {
+    height: 100vh;
+    background-color: #17012d;
+    border-top: 2px solid green;
+}
+
+.login-details {
+    width: 350px;
+    margin: 0 auto;
+    /* background: beige; */
+    height: 95vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 80px 0 40px 0;
+}
+
+.login-details h3 {
+    width: 100%;
+    color: #fff;
+}
+
+.continue-buttons>button,
+.form input {
+    width: 100%;
+    margin: 10px 0;
+    height: 40px;
+    font-size: 1.3rem;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.continue-buttons>button i {
+    padding-right: 10px;
+    color: #758E4F;
+    font-size: 1.5rem;
+}
+
+.text {
+    color: #fff;
+}
+
+.text a {
+    color: #05ff2f;
+    text-decoration: underline;
+    margin-left: 20px;
+    padding: 4px 8px;
+}
+
+.login-btn:hover {
+    background-color: #33658A;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.text a:hover {
+    border-radius: 5px;
+    background-color: #33658A;
+}
+
+.register-section {
+    height: 120vh;
+    background-color: #17012d;
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+}
+
 /*------------------------------ MEDIA QUERRIES -------------------- ------------------------*/
 @media screen and (max-width: 1024px) {
     nav ul {
