@@ -111,7 +111,7 @@ main {
     background-image: linear-gradient(to top, rgb(67, 35, 113), rgb(250, 174, 123), #fff 20%);
 }
 
-/** ---------------------- Home section --------------------------- */
+/** ---------------------- HOME SECTION --------------------------- */
 #home {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 100px;
@@ -172,7 +172,8 @@ main {
     color: #e518b8;
 }
 
-/* ------------------------- About me section -------------------------- */
+/** ---------------------- END OF HOME SECTION --------------------------- */
+/* ------------------------- ABOUT-ME SECTION -------------------------- */
 #aboutme {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 10% 1fr;
@@ -204,7 +205,8 @@ main {
     border-radius: 8px;
 }
 
-/*------------------------------ Skills Section -------------------- ------------------------*/
+/* ------------------------- END OF ABOUT-ME SECTION -------------------------- */
+/*------------------------------ SKILLS SECTION -------------------- ------------------------*/
 .heading {
     font-size: 3rem;
     font-weight: 500;
@@ -253,6 +255,9 @@ main {
     padding: 0 20px;
 }
 
+/*------------------------------END OF SKILLS SECTION -------------------- ------------------------*/
+
+/*------------------------------ PORTIFOLIO SECTION -------------------- ------------------------*/
 .portifolio {
     text-align: center;
     display: grid;
@@ -301,6 +306,45 @@ main {
     width: 200px;
 }
 
+/*------------------------------ END OF PORTIFOLIO SECTION -------------------- ------------------------*/
+/* ------------------------------------------------ SERVICES SECTION -----------------------------------------  */
+.services {
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #7659d0;
+}
+
+.service {
+    background-color: #f2f4f5;
+    width: 300px;
+    /* height: 200px; */
+    margin: 10px;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    display: grid;
+    justify-content: space-around;
+}
+
+.service:hover {
+    background-color: #989999;
+}
+
+.service i,
+.service span {
+    color: blue;
+    font-size: 4rem;
+}
+
+.one-service h3 {
+    font-size: 30px;
+}
+
+/* ------------------------------------------------ END OF SERVICES SECTION -----------------------------------------  */
+/*------------------------------ MEDIA QUERRIES -------------------- ------------------------*/
 @media screen and (max-width: 1024px) {
     nav ul {
         display: none;
