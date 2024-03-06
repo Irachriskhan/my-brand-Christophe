@@ -343,10 +343,7 @@ main {
     font-size: 1rem;
 }
 
-
-
-
-/*------------------------------ END OF PORTIFOLIO SECTION -------------------- ------------------------*/
+/*------------------------------ END OF PORTIFOLIO SECTION ------------------------*/
 /* ------------------------- BLOGS SECTION -----------------------------------------  */
 .blogs {
     width: inherit;
@@ -410,6 +407,65 @@ main {
 }
 
 /* ------------------------------ END OF SERVICES SECTION -----------------------------------------  */
+
+/** ------------------------------- CONTACTME SECTION -------------------------------- */
+.contactme {
+    display: grid;
+    grid-template: 200px 1fr / 1fr 1fr;
+    grid-template-areas: "contact-heading contact-heading " "contact-info contact-msg";
+    padding-top: 100px;
+}
+
+.contact-heading {
+    grid-area: contact-heading;
+}
+
+.contact-info {
+    grid-area: contact-info;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-msg {
+    grid-area: contact-msg;
+    background-color: #05ff2f;
+}
+
+.icon-text {
+    /* display: grid;
+    grid-template: 1fr 1fr 1fr/1fr; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    height: 200px;
+}
+
+.social-sec {
+    display: inline-flex;
+    width: 250px;
+}
+
+.social-sec a {
+    padding: 0 20px;
+    font-size: 30px;
+}
+
+.social-sec a:hover {
+    color: rgb(150, 190, 243);
+}
+
+.contact-msg .title {
+    text-align: center;
+    background-color: #05ff2f;
+}
+
+.contact-msg {}
+
+/** ------------------------------- END OF CONTACTME SECTION -------------------------------- */
+
 /* ----------------------------- LOGIN and REGISTER SECTION -----------------------------------------  */
 
 .login-section {
