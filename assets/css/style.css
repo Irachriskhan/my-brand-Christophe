@@ -267,14 +267,16 @@ main {
     padding: 50px 0;
 }
 
-.portifolio-desc {
+.portifolio-desc,
+.blog-desc {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     /* background-color: #7659d0; */
     padding-bottom: 100px;
 }
 
+.blog,
 .project {
     border: 4px solid #f2f4f5;
     max-width: 300px;
@@ -287,14 +289,18 @@ main {
     align-content: space-between;
 }
 
-/* .project~p {
-    padding-bottom: 20px;
-    text-align: justify;
-} */
+.project {
+    max-width: 300px;
+}
 
+.blog {
+    max-width: 500px;
+    align-content: center;
+}
+
+.blog a,
 .project button {
-    height: 40px;
-    width: 100px;
+    line-height: 40px;
     font-size: 24px;
     font-weight: 500;
     padding: 4px 15px;
@@ -307,7 +313,66 @@ main {
     width: 200px;
 }
 
+.like-or-comment {
+    background-color: aliceblue;
+}
+
+.thumbs-up {
+    display: flex;
+    color: #7659d0;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.add-comment {
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+
+.add-comment textarea {
+    min-width: 300px;
+    min-height: 100px;
+    max-width: 300px;
+    max-height: 100px;
+}
+
+.add-comment button {
+    width: 80px;
+    height: 30px;
+    color: darkred;
+    font-size: 1rem;
+}
+
+
+
+
 /*------------------------------ END OF PORTIFOLIO SECTION -------------------- ------------------------*/
+/* ------------------------- BLOGS SECTION -----------------------------------------  */
+.blogs {
+    width: inherit;
+    padding-top: 120px;
+    /* justify-content: space-around; */
+}
+
+.blog-desc {
+    background-color: #33658A;
+}
+
+.blog {
+    width: 60%;
+}
+
+.blog img {
+    width: 400px;
+    justify-self: center;
+}
+
+.blog a {
+    width: 100px;
+}
+
+/* --------------------------------------- END OF BLOGS SECTION -----------------------------------------  */
+
 /* ------------------------------------------------ SERVICES SECTION -----------------------------------------  */
 .services {
     width: 100%;
@@ -344,14 +409,16 @@ main {
     font-size: 30px;
 }
 
-/* ------------------------------------------------ END OF SERVICES SECTION -----------------------------------------  */
-/* ------------------------------------------------ LOGIN and REGISTER SECTION -----------------------------------------  */
+/* ------------------------------ END OF SERVICES SECTION -----------------------------------------  */
+/* ----------------------------- LOGIN and REGISTER SECTION -----------------------------------------  */
+
 .login-section {
     height: 100vh;
     background-color: #17012d;
     border-top: 2px solid green;
 }
 
+.register-details,
 .login-details {
     width: 350px;
     margin: 0 auto;
@@ -364,6 +431,11 @@ main {
     padding: 80px 0 40px 0;
 }
 
+.register-details {
+    padding: 180px 0 40px 0;
+}
+
+.register-details h3,
 .login-details h3 {
     width: 100%;
     color: #fff;
@@ -415,6 +487,9 @@ main {
     border-top: 2px solid green;
     border-bottom: 2px solid green;
 }
+
+/* ------------------------------------------------ END OF LOGIN and REGISTER SECTION -----------------------------------------  */
+
 
 /*------------------------------ MEDIA QUERRIES -------------------- ------------------------*/
 @media screen and (max-width: 1024px) {
