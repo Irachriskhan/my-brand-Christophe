@@ -452,6 +452,7 @@ main {
     height: 250px;
     border: 1px solid green;
     border-radius: 8px;
+    padding: 10px;
 }
 
 .icon-text .icon {
@@ -555,6 +556,7 @@ main {
     padding: 4px 8px;
 }
 
+.contact-msg .btn:hover,
 .login-btn:hover {
     background-color: #33658A;
     color: #fff;
@@ -573,6 +575,7 @@ main {
     border-bottom: 2px solid green;
 }
 
+.contact-input:hover,
 .login-input:hover {
     background-color: burlywood;
     color: red;
