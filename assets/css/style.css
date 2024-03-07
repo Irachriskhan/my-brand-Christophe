@@ -560,9 +560,76 @@ main {
     border-bottom: 2px solid green;
 }
 
-/* ------------------------------------------------ END OF LOGIN and REGISTER SECTION -----------------------------------------  */
+/* ----------------------- END OF LOGIN and REGISTER SECTION -----------------  */
+/* --------------------------- START OF SUBSCRIBE AND FOOTER SECTION -----------------  */
+.subscribe {
+    background-color: #758BFD;
+    line-height: 70px;
+    text-align: center;
+    margin: 0 auto;
+}
 
+.subscribe-details h2 {
+    font-weight: 500;
+    color: #fff;
+}
 
+.subscribe-details input {
+    font-size: 1.2rem;
+    height: 2rem;
+    margin: 0 20px;
+    border-radius: 8px;
+    border-radius: 1px solid #fff;
+    padding: 3px 10px;
+
+    border: 0;
+}
+
+.subscribe-details input[type=submit] {
+    background-color: #758E4F;
+    color: #fff;
+    font-weight: 600;
+
+}
+
+.subscribe-details input:hover {
+    color: #5372FF;
+    background-color: #fff;
+}
+
+.footer {
+    background-color: #27187E;
+    color: #fff;
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 45px;
+    min-height: 50vh;
+}
+
+.copyright {
+    line-height: 80px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.shortcuts li a {
+    font-size: 1.3rem;
+    color: #fff;
+    line-height: 50px;
+
+}
+
+.shortcuts {
+    width: 200px;
+    padding: 0 20px;
+}
+
+/* -------------------------------- END OF SUBSCRIBE AND FOOTER SECTION --------------  */
 /*------------------------------ MEDIA QUERRIES -------------------- ------------------------*/
 @media screen and (max-width: 1024px) {
     nav ul {
