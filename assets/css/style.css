@@ -209,6 +209,7 @@ main {
     cursor: pointer;
 }
 
+.continue-buttons button:hover,
 .btn a:hover {
     background-color: #fff;
     color: #758E4F;
@@ -529,7 +530,7 @@ main {
     width: 100%;
     margin: 10px 0;
     height: 40px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     background-color: #fff;
     border: 1px solid black;
     border-radius: 8px;
@@ -541,6 +542,7 @@ main {
     color: #758E4F;
     font-size: 1.5rem;
 }
+
 
 .text {
     color: #fff;
@@ -569,6 +571,11 @@ main {
     background-color: #17012d;
     border-top: 2px solid green;
     border-bottom: 2px solid green;
+}
+
+.login-input:hover {
+    background-color: burlywood;
+    color: red;
 }
 
 /* ----------------------- END OF LOGIN and REGISTER SECTION -----------------  */
