@@ -164,7 +164,7 @@ main {
 }
 
 .social__links li {
-    color: rgb(104, 109, 212);
+    color: #686dd4;
     padding: 0 10px;
     font-size: 2rem;
 }
@@ -360,7 +360,7 @@ main {
 }
 
 .blog img {
-    width: 400px;
+    width: inherit;
     justify-self: center;
 }
 
@@ -439,7 +439,13 @@ main {
     flex-direction: column;
     justify-content: space-around;
     align-content: space-around;
-    height: 200px;
+    height: 250px;
+    border: 1px solid green;
+    border-radius: 8px;
+}
+
+.icon-text .icon {
+    padding: 10px 0;
 }
 
 .social-sec {
@@ -476,16 +482,12 @@ main {
     height: 80px;
 }
 
-/* .contact-input {
-    background-color: #D9D9D9;
-} */
-
 /** ------------------------------- END OF CONTACTME SECTION -------------------------------- */
 
 /* ----------------------------- LOGIN and REGISTER SECTION -----------------------------------------  */
 
 .login-section {
-    height: 100vh;
+    min-height: 120vh;
     background-color: #17012d;
     border-top: 2px solid green;
 }
@@ -554,7 +556,7 @@ main {
 }
 
 .register-section {
-    height: 120vh;
+    min-height: 130vh;
     background-color: #17012d;
     border-top: 2px solid green;
     border-bottom: 2px solid green;
@@ -683,6 +685,17 @@ main {
     #home {
         gap: 10px;
         padding-left: 0;
+    }
+
+    .contactme {
+        display: grid;
+        grid-template: 100px 1fr 1fr /1fr;
+        grid-template-areas: "contact-heading" "contact-info " "contact-msg";
+        padding-top: 100px;
+    }
+
+    .contact-msg {
+        margin: 0 auto;
     }
 }
 
