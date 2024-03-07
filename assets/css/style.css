@@ -193,17 +193,26 @@ main {
 }
 
 .btn {
-    height: 60px;
+    height: 40px;
     text-align: center;
     margin-top: 40px;
+    border: none;
 }
 
-.btn button {
-    font-size: 1.5rem;
-    padding: 10px 30px;
+.btn a {
+    font-size: 1.2rem;
+    padding: 5px 20px;
     color: #fff;
     background-color: #758E4F;
     border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn a:hover {
+    background-color: #fff;
+    color: #758E4F;
+    border: 1px solid green;
 }
 
 /* ------------------------- END OF ABOUT-ME SECTION -------------------------- */
@@ -298,8 +307,8 @@ main {
     align-content: center;
 }
 
-.blog a,
-.project button {
+/* .blog a, .project button */
+.blog a {
     line-height: 40px;
     font-size: 24px;
     font-weight: 500;
@@ -624,6 +633,13 @@ main {
     color: #fff;
     line-height: 50px;
 
+}
+
+.shortcuts li a:hover {
+    background-color: rgb(87, 164, 10);
+    transition: .3s ease-in-out;
+    padding: 2px 6px;
+    border-radius: 8px;
 }
 
 .shortcuts {
