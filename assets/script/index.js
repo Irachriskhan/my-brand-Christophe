@@ -1,15 +1,11 @@
 // Login variables
-let email = document.getElementById("email").value;
-let password = document.getElementById("password").value;
+let email = document.getElementById("email");
+let password = document.getElementById("password");
 // Register Variables
-let name = document.getElementById("name").value;
-console.log(name);
-let reg_email = document.getElementById("reg-email").value;
-console.log(reg_email);
+let name = document.getElementById("name");
+let reg_email = document.getElementById("reg-email");
 let reg_password = document.querySelector("#reg-password");
-console.log(reg_password.value);
 let verifyPassword = document.getElementById("verify-password");
-// console.log(verifyPassword);
 // Buttons
 let login = document.getElementById("login-btn");
 let register = document.getElementById("register-btn");
@@ -115,8 +111,9 @@ const validateLogin = (e) => {
   e.preventDefault();
   var emailErr = (passwordErr = true);
 
-  validateEmail(email, "emailErr", "email");
-  validatePassword(password, "passwordErr", "password");
+  validateEmail(email.value, "emailErr", "email");
+  validatePassword(password.value, "passwordErr", "password");
+  authenticateLogin();
 
   if ((emailErr = passwordErr === true)) {
     return false;
@@ -129,7 +126,7 @@ const validateRegister = (e) => {
   var nameErr = (emailErr = passwordErr = checkPasswordErr = true);
 
   // validateName(name);
-  validateEmail(reg_email, "regEmailErr", "reg-email");
+  validateEmail(reg_email.value, "regEmailErr", "reg-email");
   validatePassword(reg_password.value, "regPasswordErr", "reg-password");
   comparePassword(reg_password.value, verifyPassword.value);
 
@@ -140,3 +137,19 @@ const validateRegister = (e) => {
 
 login.addEventListener("click", validateLogin);
 register.addEventListener("click", validateRegister);
+
+// LOGIN VERIFICATION FROM LOCAL STORAGE
+function authenticateLogin() {
+  if (
+    email.value === "irachriskhan@gmail.com" &&
+    password.value === "23Ckhan@"
+  ) {
+    window.location.href = "./dashboard.html";
+  } else if (
+    email.value !== "irachriskhan@gmail.com" &&
+    password.value !== "23Ckhan@"
+  ) {
+    alert("Invalid Username and Password");
+  } else if (password.value !== "1234") alert("Invalid Password");
+  else alert("Invalid Username");
+}

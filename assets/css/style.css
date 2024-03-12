@@ -64,6 +64,9 @@ nav ul li a:hover {
 .active {
     color: #0E41A3;
     text-decoration: underline;
+    font-size: 1.3rem;
+    /* background-color: rgb(87, 164, 10); */
+    ;
 }
 
 .checkBtn {
@@ -112,7 +115,18 @@ main {
     background-image: linear-gradient(to top, rgb(67, 35, 113), rgb(250, 174, 123), #fff 20%);
 }
 
+
+/* Show or hide Section   */
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
 /** ---------------------- HOME SECTION --------------------------- */
+
 #home {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 100px;

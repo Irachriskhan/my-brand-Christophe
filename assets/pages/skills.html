@@ -21,7 +21,7 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Chris-brand</title>
 </head>
 
@@ -36,59 +36,87 @@
             </label>
             <ul class="all-links">
                 <li>
-                    <a href="#home" class="active">Home</a>
+                    <a href="../../index.html">Home</a>
                 </li>
                 <li>
-                    <a href="./assets/pages/aboutme.html">AboutMe</a>
+                    <a href="./aboutme.html">AboutMe</a>
                 </li>
                 <li>
-                    <a href="./assets/pages/skills.html">Skills</a>
+                    <a href="#" class="active">Skills</a>
                 </li>
                 <li>
-                    <a href="./assets/pages/portifolio.html">Portifolio</a>
+                    <a href="./portifolio.html">Portifolio</a>
                 </li>
                 <li>
-                    <a href="./assets/pages/blogs.html">Blogs</a>
+                    <a href="./blogs.html">Blogs</a>
                 </li>
                 <li>
-                    <a href="./assets/pages/services.html">Services</a>
+                    <a href="./services.html">Services</a>
                 </li>
                 <li>
-                    <a href="./assets/pages/contactme.html">ContactMe</a>
+                    <a href="./contactme.html">ContactMe</a>
                 </li>
                 <li>
-                    <a href="./assets/pages/login.html" class="login">Login</a>
+                    <a href="./login.html" class="login">Login</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <!-- -----------------------  Home section -------------- -->
-        <section id="home" class="container container-one">
-            <div class="home-desc">
-                <div class="introduction">
-                    <h1>Hi, I'm <br><label>Christophe</label></h1>
-                    <p>A Fullstack Developer</p>
+        <!-- ------------------------  Skills Section  -------------------------- -->
+        <section id="skills" class="skills container container-one">
+            <div class="heading">Skills</div>
+            <div class="skills-desc">
+                <div class="single-skill">
+                    <h1><i class="fa-solid fa-code"></i>Frontend<i class="fa-solid fa-circle-chevron-down"></i><i
+                            class="fa-solid fa-chevron-up second_icon"></i></h1>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>React</li>
+                    </ul>
                 </div>
-                <div>
-                    I am an enthusiast person with the courage to learn cutting-edge technologies with the aim of
-                    solving the challenges
-                    faced by my local community so that we can build together an inclusive and developed community.
+                <div class="single-skill">
+                    <h1><i class="fa-solid fa-boxes-stacked"></i>Backend<i
+                            class="fa-solid fa-circle-chevron-down"></i><i
+                            class="fa-solid fa-chevron-up second_icon"></i></h1>
+                    </h1>
+                    <ul>
+                        <li>NodeJS</li>
+                        <li>Express</li>
+                        <li>MongoDB</li>
+                        <li>MySQL</li>
+                    </ul>
                 </div>
-            </div>
-            <div class="profile-img">
-                <img src="./assets/images/KhanPic.JPG" alt="Image" srcset="">
-            </div>
-            <div class="social__links">
-                <li><i class="fa-brands fa-twitter"></i></li>
-                <li><i class="fa-brands fa-linkedin"></i></li>
-                <li><i class="fa-brands fa-instagram"></i></li>
-                <li><i class="fa-brands fa-facebook"></i></li>
+                <div class="single-skill">
+                    <h1><i class="fa-solid fa-computer"></i>ICDL Trainer<i
+                            class="fa-solid fa-circle-chevron-down"></i><i
+                            class="fa-solid fa-chevron-up second_icon"></i></h1>
+                    </h1>
+                    <ul>
+                        <li>MS Office</li>
+                        <li>Computer Security</li>
+                        <li>Computer Essentials</li>
+                        <li>Online Collaboration</li>
+                    </ul>
+                </div>
+                <div class="single-skill">
+                    <h1><i class="fa-solid fa-magnifying-glass"></i>Research<i
+                            class="fa-solid fa-circle-chevron-down"></i><i
+                            class="fa-solid fa-chevron-up second_icon"></i></h1>
+                    <ul>
+                        <li>Qualitative Research</li>
+                        <li>Quantitative Research</li>
+                        <li>Data Analysis</li>
+                        <li>Data Visualization</li>
+                    </ul>
+                </div>
             </div>
         </section>
-        <!-- -----------------------  Home section ---------------------- -->
-
+        <!-- ----------------------------  End of Skills Section  ------------------ -->
     </main>
+
     <footer>
         <!-- ----------------------------  Footer Section  -------------------- -->
         <section id="footer" class="footer">
@@ -116,6 +144,7 @@
         </section>
         <!-- ----------------------------  End of Footer Section  ----------------- -->
     </footer>
+    <script src="./assets/script/index.js"></script>
 </body>
 
 </html>
