@@ -658,6 +658,39 @@ main {
 }
 
 /* -------------------------------- END OF SUBSCRIBE AND FOOTER SECTION --------------  */
+
+/* ----------------------- FORM VALIDATION --------------------------  */
+.input-1 {
+    background-image: url(../images/check.png);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    border: 1px solid #01cc40;
+}
+
+.input-2 {
+    background-image: url(../images/cancel.png);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    border: 1px solid red;
+}
+
+.input-3 {
+    border: 1px solid #01cc40 !important;
+}
+
+select {
+    outline: none !important;
+}
+
+.input-4 {
+    border: 1px solid red;
+}
+
+.error {
+    color: red;
+    font-size: 90%;
+}
+
 /*------------------------------ MEDIA QUERRIES -------------------- ------------------------*/
 @media screen and (max-width: 1024px) {
     nav ul {

@@ -457,11 +457,13 @@
                 <div class="text">Continue with email</div>
 
                 <form class="form">
-                    <input type="email" id="email" class="login-input" required="" value="" placeholder="Email">
-                    <input type="password" id="password" class="login-input" required="" value=""
-                        placeholder="Password">
-                    <input type="submit" class="login-btn" value="Send">
+                    <input type="email" id="email" class="login-input" placeholder="Email" required>
+                    <div class="error" id="emailErr"></div>
+                    <input type="password" id="password" class="login-input" placeholder="Password" required />
+                    <div class="error" id="passwordErr"></div>
+                    <input type="submit" id="login-btn" class="login-btn" value="Send">
                 </form>
+
                 <div class="text">Forgot password?<a class="link-text" href="#reset">Reset</a></div>
                 <div class="text">
                     Don't have account?<a class="link-text" href="#register">Register</a>
@@ -486,12 +488,20 @@
                 <div class="text">Continue with email</div>
 
                 <form class="form">
-                    <input type="text" class="login-input" id="name" required="" value="" placeholder="Name">
-                    <input type="email" id="email" class="login-input" required="" value="" placeholder="Email">
-                    <input type="password" id="password" required="" value="" placeholder="Password">
-                    <input type="password" id="verify-password" class="login-input" required="" value=""
-                        placeholder="Verify Password">
-                    <input type="submit" class="login-btn" value="Send">
+                    <input type="text" class="login-input" id="name" placeholder="Name" required>
+                    <div class="error" id="nameErr"></div>
+
+                    <input type="email" id="reg-email" class="login-input" placeholder="Email" required>
+                    <div class="error" id="regEmailErr"></div>
+
+                    <input type="password" id="reg-password" class="login-input" placeholder="Password" required>
+                    <div class="error" id="regPasswordErr"></div>
+
+                    <input type="password" id="verify-password" class="login-input" placeholder="Verify Password"
+                        required>
+                    <div class="error" id="checkPasswordErr"></div>
+
+                    <input type="submit" id="register-btn" class="login-btn" value="Send">
                 </form>
 
                 <div class="text">Have an account?<a class="link-text" href="#login">Login</a>
@@ -597,7 +607,7 @@
         </section>
         <!-- ----------------------------  End of Footer Section  ----------------- -->
     </footer>
-    <script src="./assets/script/app.js"></script>
+    <script src="./assets/script/index.js"></script>
 </body>
 
 </html>
